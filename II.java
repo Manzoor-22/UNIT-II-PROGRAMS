@@ -7,9 +7,12 @@ public class II {
         al.add(3);
         al.add(5);
         al.add(7);
-        Iterator<Integer> itr = al.iterator();
+        ListIterator<Integer> itr = al.listIterator();
         while(itr.hasNext()){
             System.out.println(itr.next());
+        }
+        while(itr.hasPrevious()){
+            System.out.println(itr.previous());
         }
     }
 }
