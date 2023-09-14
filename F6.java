@@ -6,7 +6,7 @@ public class F6 {
         if(con == null){
             return;
         }
-        int number = Integer.parseInt(con.readLine());
+        int number = Integer.parseInt(con.readLine("Enter a number: "));
         String isPrime = "Prime";
         for(int i = 2; i < number; i++){
             if(number % i == 0){
